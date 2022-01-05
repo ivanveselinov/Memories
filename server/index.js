@@ -15,7 +15,6 @@ app.use(cors());
 app.use('/posts', postRoutes); // posts.js routes is now setuped localhost:4000/posts
 
 //connection to db
-// const CONNECTION_URL = "mongodb+srv://ivan:veselinov12345@cluster0.onuwg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 const PORT = process.env.PORT || 4000; // Add port 
 
 mongoose.connect(process.env.CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })

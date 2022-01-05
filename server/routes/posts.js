@@ -1,11 +1,11 @@
 import express from 'express';
 
-import { getPosts, createPost } from '../contollers/posts.js'
+import { getPosts, createPost, updatePost, deletePost } from '../contollers/posts.js'
 
 const router = express.Router(); // createing router
       
-router.get('/', getPosts);        // read Posts
-router.post('/', createPost);     // Write Posts
-
+router.get('/', getPosts);        // Read Post
+router.post('/', createPost);     // Write Post
+router.patch('/:id', updatePost);  // Update Post
+router.delete('/:id', deletePost); // Delete Post
 export default router;
-
