@@ -16,7 +16,8 @@ export const getPosts = async (req, res) => {
         res.status(404).json({ message: error.message });
     }
 }
-                //get post by ID
+
+//                 // get post by ID
 // export const getPost = async (req, res) => { 
 //     const { id } = req.params;
 
@@ -84,3 +85,4 @@ export const deletePost = async (req, res) => {
 
 
 export default router;
+
