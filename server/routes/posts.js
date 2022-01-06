@@ -9,7 +9,7 @@ router.post('/', createPost);     // Write Post
 // router.get('/:id', getPosts);  // get post by id
 router.patch('/:id', updatePost);  // Update Post
 router.delete('/:id', deletePost); // Delete Post
-router.patch('/:id/likePost', likePost); //Like Post
+router.patch('/:id/likePost', likePost); // Like Post
 export default router;
 
 
